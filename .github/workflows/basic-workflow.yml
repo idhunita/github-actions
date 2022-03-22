@@ -10,8 +10,8 @@ jobs:
     strategy:
         fail-fast: false
         matrix:
-            os: [ macos-latest, windows-latest, ubuntu-latest ]
-            java: [ '8', '11', '17']
+          os: [ macos-latest, windows-latest, ubuntu-latest ]
+          java: [ '8', '11', '17']
     steps:
       - uses: actions/checkout@v2
       - name: Set up JDK 17
