@@ -27,5 +27,12 @@ public class ItemsControllerTest {
 
 		assertThat(postedItem.getDescription()).isEqualTo(itemDescription);
 	}
+	
+	@BeforeEach
+	public void setup() {
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("--headless");
+		driver = new ChromeDriver(options);
+	}
 
 }
